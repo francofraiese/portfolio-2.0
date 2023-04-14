@@ -11,6 +11,7 @@ const MakeStars = () => {
 
   return (
     <div
+      key={`${estrellas[color]}_${posX}_${size}_${delay}_${animation}`}
       className={`estrella estrella-${estrellas[color]} animacion-estrella-${delay}`}
       style={{
         width: size,

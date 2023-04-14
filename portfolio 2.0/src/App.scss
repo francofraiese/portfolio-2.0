@@ -12,7 +12,10 @@
 .app .content {
   position: absolute;
   z-index: 1;
-  width: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cielo {
