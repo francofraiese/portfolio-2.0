@@ -1,0 +1,257 @@
+.project {
+    width: 100%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .project-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  
+  .project-images {
+    width: 50%;
+    max-width: 50%;
+    height: 40.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .project-image-landing,
+  .project-image-home {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    cursor: pointer;
+    position: absolute;
+    transition: 0.7s ease;
+  }
+  
+  .project-image-landing{
+    opacity: 1;
+  }
+
+  .project-image-home{
+    opacity: 0;
+  }
+
+  .project-images:hover {
+
+    .project-image-home{
+      opacity: 1;
+    }
+
+    .project-image-landing{
+      opacity: 0;
+    }
+  }
+  
+  .project-data {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+  }
+  
+  .project-title {
+    font-weight: 500;
+    font-size: 52px;
+    margin: 0px;
+    letter-spacing: 1px;
+  }
+  
+  .project-description {
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 1.3px;
+    margin: 0px;
+    opacity: 0.7;
+    line-height: 1.5;
+  }
+  
+  .project-extra {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0px 10px;
+  }
+  .project-tools {
+    width: 60%;
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-links {
+    width: 30%;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .project-subtitles {
+    font-weight: 400;
+  }
+  
+  .project-tools-icons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    row-gap: 40px;
+    align-items: center;
+  }
+  
+  .project-links-icons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .tools-icon {
+    font-size: 40px;
+  }
+  
+  .link-icon {
+    cursor: pointer;
+  }
+  
+  .link-icon {
+    font-size: 40px;
+    transition: 0.3s;
+    filter: grayscale(100%);
+  }
+  
+  .link-icon:hover {
+    scale: 1.15;
+    filter: grayscale(0%);
+  }
+  
+  #world-icon {
+    color: #15c196;
+  }
+  
+  #github-icon {
+    color: #a1a1a1;
+  }
+  
+  #github-icon:hover {
+    color: #f0f6fc;
+  }
+  
+  #react {
+    color: #5ccfee;
+  }
+  
+  #redux {
+    color: #7046b2;
+  }
+  
+  #node {
+    color: #85be47;
+  }
+  
+  #nest {
+    color: #d5214a;
+  }
+  
+  #javascript {
+    color: #ead41c;
+  }
+  
+  #typescript {
+    color: #2e72bc;
+  }
+  
+  #express {
+    color: #f0f6fc;
+  }
+  
+  #postgres {
+    color: #30628a;
+  }
+  
+  #mongo {
+    color: #0fa14c;
+  }
+  
+  @media (max-width: 1199px) {
+    .project-tools-icons {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .project-tools-icons {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .project-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .project-description {
+      text-align: center;
+    }
+  
+    .project-images {
+      width: 75%;
+      max-width: 75%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .project-image-landing, .project-image-home {
+      width: 100%;
+      border-radius: 25px;
+    }
+  
+    .project-data {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: unset;
+      gap: 50px;
+    }
+  }
+
+  @media (max-width: 768px){
+    .project-tools-icons {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .project-links-icons{
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      gap: 40px
+    }
+  }
+  
+  @media (max-width: 428px){
+    .project-tools-icons {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
