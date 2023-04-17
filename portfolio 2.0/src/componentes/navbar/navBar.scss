@@ -3,36 +3,46 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 10px 0px;
 }
 
 .navbar .names {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.navbar .names > a {
-    text-decoration: none;
-    padding-left: 3px;
+.navbar-cvs{
+  display: flex;
 }
 
-.navbar .names > h3{
-    font-weight: 300;
+.navbar .names .navbar-cvs > a {
+  text-decoration: none;
+  padding-left: 3px;
 }
 
-.navbar .names > a .lastname {
-    color: #15c196;
-    padding-left: 3px;
-    font-weight: 300;
-  }
+.navbar .names > h3 {
+  font-weight: 300;
+  margin: 3px 0px;
+}
 
-.navbar .buttons{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    gap: 40px;
-    padding-right: 5%;
+.navbar .names .navbar-cvs > h3 {
+  font-weight: 300;
+  margin: 3px 0px;
+}
+
+.navbar .names .navbar-cvs > a .curriculum {
+  color: #15c196;
+  padding-left: 3px;
+  margin: 3px 0px;
+  font-weight: 300;
+}
+
+.navbar .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 40px;
 }
 
 .navbar .buttons .item {
@@ -41,9 +51,104 @@
 
 .navbar .buttons .item > h3 {
   font-weight: 300;
+  color: white;
+  margin: 3px 0px;
 }
 
 .navbar .buttons .item .number {
   color: #15c196;
   padding-right: 3px;
+}
+.navbar-language-flags {
+  display: flex;
+  gap: 10px;
+}
+.navbar-language-flag {
+  width: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 1199px) {
+  .navbar .buttons {
+    gap: 18px;
+  }
+  .navbar-language-flag {
+    width: 25px;
+  }
+  .navbar .names > h3 {
+    font-size: 17px;
+  }
+  .navbar .names .navbar-cvs > h3 {
+    font-size: 17px;
+  }
+  .navbar .buttons .item > h3 {
+    font-size: 17px;
+  }
+  .navbar .names .navbar-cvs > a .curriculum {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar .buttons {
+    gap: 15px;
+  }
+  .navbar-language-flag {
+    width: 22px;
+  }
+  .navbar .names > h3 {
+    font-size: 16px;
+  }
+  .navbar .names .navbar-cvs > h3 {
+    font-size: 16px;
+  }
+  .navbar .buttons .item > h3 {
+    font-size: 16px;
+  }
+  .navbar .names .navbar-cvs > a .curriculum {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px){
+  .names, .buttons .item {
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 540px) {
+  .navbar-cvs-separator{
+    display: none;
+  }
+  .navbar-cvs{
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar .buttons {
+    gap: 10px;
+  }
+  .navbar-language-flag {
+    width: 20px;
+    height: fit-content;
+    padding: 10px 0px;
+  }
+  .navbar .names > h3 {
+    font-size: 14px;
+  }
+  .navbar .names .navbar-cvs > h3 {
+    font-size: 14px;
+  }
+  .navbar .buttons .item > h3 {
+    font-size: 14px;
+  }
+  .navbar .names .navbar-cvs > a .curriculum {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px){
+  .navbar .names{
+    text-align: center;
+  }
 }

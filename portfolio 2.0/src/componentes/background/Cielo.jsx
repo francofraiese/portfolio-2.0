@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import MakeStars from "../../utils/MakeStars";
+import './Cielo.scss'
 
 const Cielo = () => {
   //con un set state y un event listener de resize puedo hacer la cantidad de estrellas responsive constantemente pero eso reiniciaria animacion.

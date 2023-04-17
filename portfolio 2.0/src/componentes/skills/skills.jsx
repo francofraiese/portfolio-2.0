@@ -1,32 +1,32 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import LanguageData from "../../utils/LanguageData";
 import "./skills.scss";
+import AppContext from "../../context";
 
 const Skills = () => {
-  const [openTab, setOpenTab] = useState(null);
-
-  const handleTab = (tab) => {
-    setOpenTab(tab);
-  };
+  const { lang } = useContext(AppContext);
+  const skills = LanguageData[lang].skills;
+  const { front, back, db, toolkit } = skills;
 
   return (
-    <div className="skills">
+    <div id="Skills" className="skills">
       <div className="skills-tabs">
-          <div className="tab" onClick={() => handleTab("Front-end")}>
-            <h3 className="tab-title">Front-end</h3>
-            <div></div>
-          </div>
-          <div className="tab" onClick={() => handleTab("Back-end")}>
-            <div></div>
-            <h3 className="tab-title">Back-end</h3>
-          </div>
-          <div className="tab" onClick={() => handleTab("Databases")}>
-            <h3 className="tab-title">Databases</h3>
-            <div></div>
-          </div>
-          <div className="tab" onClick={() => handleTab("Toolkit")}>
-            <div></div>
-            <h3 className="tab-title">Toolkit</h3>
-          </div>
+        <div className="tab">
+          <h3 className="tab-title">{front.title}</h3>
+          <div className="tab-icons">{front.icons.map((icon) => icon)}</div>
+        </div>
+        <div className="tab-reverse">
+          <h3 className="tab-title">{back.title}</h3>
+          <div className="tab-icons">{back.icons.map((icon) => icon)}</div>
+        </div>
+        <div className="tab">
+          <h3 className="tab-title">{db.title}</h3>
+          <div className="tab-icons">{db.icons.map((icon) => icon)}</div>
+        </div>
+        <div className="tab-reverse">
+          <h3 className="tab-title">{toolkit.title}</h3>
+          <div className="tab-icons">{toolkit.icons.map((icon) => icon)}</div>
+        </div>
       </div>
     </div>
   );

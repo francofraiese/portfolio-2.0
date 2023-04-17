@@ -1,0 +1,141 @@
+.cielo {
+  width: 100%;
+  height: 100%;
+  background-color: #14141b;
+  position: fixed;
+}
+.estrella {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.estrella-violeta {
+  background-color: #76339e;
+}
+.estrella-azul {
+  background-color: #2e4267;
+}
+.estrella-naranja {
+  background-color: #d97e4c;
+}
+.estrella-verde {
+  background-color: #315a4f;
+}
+.estrella-amarilla {
+  background-color: #bc9362;
+}
+
+.animacion-estrella-0 {
+  -webkit-animation: animaCielo 8s linear infinite backwards running;
+  -moz-animation: animaCielo 8s linear infinite backwards running;
+  -ms-animation: animaCielo 8s linear infinite backwards running;
+  animation: animaCielo 8s linear infinite backwards running;
+}
+
+.animacion-estrella-1 {
+  -webkit-animation: animaCielo 10s linear infinite backwards running;
+  -moz-animation: animaCielo 10s linear infinite backwards running;
+  -ms-animation: animaCielo 10s linear infinite backwards running;
+  animation: animaCielo 10s linear infinite backwards running;
+}
+
+.animacion-estrella-2 {
+  -webkit-animation: animaCielo 11s linear infinite backwards running;
+  -moz-animation: animaCielo 11s linear infinite backwards running;
+  -ms-animation: animaCielo 11s linear infinite backwards running;
+  animation: animaCielo 11s linear infinite backwards running;
+}
+
+.animacion-estrella-3 {
+  -webkit-animation: animaCielo 10.5s linear infinite backwards running;
+  -moz-animation: animaCielo 10.5s linear infinite backwards running;
+  -ms-animation: animaCielo 10.5s linear infinite backwards running;
+  animation: animaCielo 10.5s linear infinite backwards running;
+}
+
+.animacion-estrella-4 {
+  -webkit-animation: animaCielo 9.5s linear infinite backwards running;
+  -moz-animation: animaCielo 9.5s linear infinite backwards running;
+  -ms-animation: animaCielo 9.5s linear infinite backwards running;
+  animation: animaCielo 9.5s linear infinite backwards running;
+}
+
+.animacion-estrella-5 {
+  -webkit-animation: animaCielo 9s linear infinite backwards running;
+  -moz-animation: animaCielo 9s linear infinite backwards running;
+  -ms-animation: animaCielo 9s linear infinite backwards running;
+  animation: animaCielo 9s linear infinite backwards running;
+}
+
+.animacion-estrella-6 {
+  -webkit-animation: animaCielo 8.5s linear infinite backwards running;
+  -moz-animation: animaCielo 8.5s linear infinite backwards running;
+  -ms-animation: animaCielo 8.5s linear infinite backwards running;
+  animation: animaCielo 8.5s linear infinite backwards running;
+}
+
+.animacion-estrella-7 {
+  -webkit-animation: animaCielo 7.5s linear infinite backwards running;
+  -moz-animation: animaCielo 7.5s linear infinite backwards running;
+  -ms-animation: animaCielo 7.5s linear infinite backwards running;
+  animation: animaCielo 7.5s linear infinite backwards running;
+}
+
+.animacion-estrella-8 {
+  -webkit-animation: animaCielo 11.5s linear infinite backwards running;
+  -moz-animation: animaCielo 11.5s linear infinite backwards running;
+  -ms-animation: animaCielo 11.5s linear infinite backwards running;
+  animation: animaCielo 11.5s linear infinite backwards running;
+}
+
+.animacion-estrella-9 {
+  -webkit-animation: animaCielo 7s linear infinite backwards running;
+  -moz-animation: animaCielo 7s linear infinite backwards running;
+  -ms-animation: animaCielo 7s linear infinite backwards running;
+  animation: animaCielo 7s linear infinite backwards running;
+}
+
+@keyframes animaCielo {
+  0% {
+    top: -2%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@-webkit-keyframes animaCielo {
+  0% {
+    top: -2%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@-ms-keyframes animaCielo {
+  0% {
+    top: -2%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@-o-keyframes animaCielo {
+  0% {
+    top: -2%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+@-moz-keyframes animaCielo {
+  0% {
+    top: -2%;
+  }
+  100% {
+    top: 100%;
+  }
+}

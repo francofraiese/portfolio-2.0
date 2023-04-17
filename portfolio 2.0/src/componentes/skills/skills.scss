@@ -1,4 +1,4 @@
-.skills{
+.skills {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -7,7 +7,7 @@
     min-height: 90vh;
 }
 
-.skills-tabs{
+.skills-tabs {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -15,21 +15,139 @@
     transition: all 0.3s ease;
 }
 
-.tab{
+.tab {
     width: 90%;
+    gap: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: solid 1px #15c196;
+    align-items: center;
     border-radius: 10px;
     padding: 15px 28px;
     margin-bottom: 30px;
     transition: all 0.3s ease;
+    background-color: #00000073;
+}
+
+.tab-reverse {
+    width: 90%;
+    gap: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 15px 28px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    background-color: #00000073;
 }
 
 .tab-title {
     margin: 0;
+    width: fit-content;
     font-size: 35px;
     font-weight: 400;
     border-bottom: 2px double #15c196;
+}
+
+.tab-icons-svg{
+    width: "256";
+    height: "233";
+}
+
+.tab-icons{
+    font-size: 36px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 40px;
+
+    #bootstrap{
+        color: #7911EE
+    }
+    #react {
+      color: #5ccfee;
+    }
+  
+    #redux {
+      color: #7046b2;
+    }
+  
+    #node {
+      color: #85be47;
+    }
+  
+    #nest {
+      color: #d5214a;
+    }
+  
+    #javascript {
+      color: #ead41c;
+    }
+  
+    #typescript {
+      color: #2e72bc;
+    }
+  
+    #express {
+      color: #f0f6fc;
+    }
+  
+    #postgres {
+      color: #30628a;
+    }
+  
+    #mongo {
+      color: #0fa14c;
+    }
+
+    #mysql{
+        color: #005C83;
+    }
+
+    #sequelize{
+        color: #42A7E3;
+    }
+
+    #prisma{
+        color: #0B3147;
+    }
+
+    #git{
+        color: #E44D30;
+    }
+
+    #github-skill{
+        color: #f0f6fc;
+    }
+
+    #gitlab{
+        color: #E24329;
+    }
+
+    #bitbucket{
+        color: #0D63DD;
+    }
+
+    #trello{
+        color: #026AA7;
+    }
+
+    #jira{
+        color:#2684FF ;
+    }
+
+    #css3{
+        color: #2E49D4;
+    }
+
+    #html5{
+        color: #C95437;
+    }
+
+    #swagger{
+        color: #6A9500;
+    }
 }

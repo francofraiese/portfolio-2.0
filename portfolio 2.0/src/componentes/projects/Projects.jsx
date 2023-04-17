@@ -1,24 +1,25 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { TbPoint } from "react-icons/tb";
-
+import LanguageData from "../../utils/LanguageData";
 import "./Projects.scss";
-import { ProjectsData } from "./Project/ProjectData";
 import Project from "./Project/Project";
+import AppContext from "../../context";
 
 const Projects = () => {
   const [project, setProject] = useState("0");
+  const { lang } = useContext(AppContext)
   const sliderRef = useRef(null);
-  console.log(project);
-
+  const ProjectsData = LanguageData[lang].projects
   const handlePoints = (newIndex) => {
     const slider = sliderRef.current;
-    console.log(slider);
     slider?.style.setProperty("--slider-index", newIndex);
     setProject(newIndex);
   };
 
+
+
   return (
-    <div className="projects">
+    <div id="Projects" className="projects">
       <div className="projects-container" ref={sliderRef}>
         {ProjectsData.map(({ title, text, tools, links, images }, index) => (
           <Project
