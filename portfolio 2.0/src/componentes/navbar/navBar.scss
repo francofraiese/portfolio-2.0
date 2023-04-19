@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 10px 0px;
+  margin: 15px 0px;
 }
 
 .navbar .names {
@@ -24,11 +24,13 @@
 .navbar .names > h3 {
   font-weight: 300;
   margin: 3px 0px;
+  font-size: 20px;
 }
 
 .navbar .names .navbar-cvs > h3 {
   font-weight: 300;
   margin: 3px 0px;
+  font-size: 20px;
 }
 
 .navbar .names .navbar-cvs > a .curriculum {
@@ -36,13 +38,14 @@
   padding-left: 3px;
   margin: 3px 0px;
   font-weight: 300;
+  font-size: 20px;
 }
 
 .navbar .buttons {
   display: flex;
   flex-direction: row;
   justify-content: end;
-  gap: 40px;
+  gap: 50px;
 }
 
 .navbar .buttons .item {
@@ -53,6 +56,7 @@
   font-weight: 300;
   color: white;
   margin: 3px 0px;
+  font-size: 20px;
 }
 
 .navbar .buttons .item .number {
@@ -64,7 +68,7 @@
   gap: 10px;
 }
 .navbar-language-flag {
-  width: 30px;
+  width: 35px;
   cursor: pointer;
 }
 

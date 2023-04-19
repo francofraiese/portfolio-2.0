@@ -10,6 +10,7 @@ const Skills = () => {
 
   return (
     <div id="Skills" className="skills">
+      <h2 className="skills-title">My <span className="skills-title-green">skills</span></h2>
       <div className="skills-tabs">
         <div className="tab">
           <h3 className="tab-title">{front.title}</h3>

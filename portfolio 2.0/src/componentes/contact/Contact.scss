@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
-  margin-bottom: 100px;
+  padding: 100px 0px;
 }
 
 .contact-title {
@@ -186,7 +186,8 @@
   }
 
   .contact-form {
-    width: 60%;
+    width: 80%;
+    min-width: 300px;
   }
 
   .contact-social-media {
@@ -199,7 +200,7 @@
   }
   .contact-form-send {
     padding: 7px 11px;
-    font-size: 16px;
+    font-size: 18px;
   }
   .contact-text {
     font-size: 17px;
@@ -208,17 +209,95 @@
   .contact-icon{
     font-size: 35px;
   }
+  .contact-form-titles {
+    font-size: 20px;
+  }
+  .contact-form-input {
+    padding: 7px 10px;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 560px) {
+  .contact {
+    gap: 50px;
+  }
+
+  .contact-content {
+    gap: 40px;
+  }
+
+  .contact-form {
+    width: 80%;
+    min-width: 270px;
+  }
+
+  .contact-social-media {
+    width: 80%;
+    gap: 40px;
+    padding: 0;
+  }
+  .contact-title {
+    font-size: 26px;
+  }
+  .contact-form-send {
+    padding: 6px 10px;
+    font-size: 16px;
+  }
+  .contact-text {
+    font-size: 16px;
+    letter-spacing: 1.2px;
+  }
   .contact-icon{
-    font-size: 30px;
+    font-size: 35px;
   }
   .contact-form-titles {
     font-size: 18px;
   }
   .contact-form-input {
-    padding: 3px 5px;
+    padding: 5px 8px;
     font-size: 14px;
   }
-}
+} 
+
+@media (max-width: 425px) {
+  .contact {
+    width: 90%;
+    gap: 40px;
+  }
+
+  .contact-content {
+    gap: 30px;
+  }
+
+  .contact-form {
+    min-width: 220px;
+  }
+
+  .contact-social-media {
+    gap: 30px;
+  }
+
+  .contact-title {
+    font-size: 24px;
+  }
+
+  .contact-form-send {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+  .contact-text {
+    font-size: 14px;
+    letter-spacing: 1.2px;
+  }
+  .contact-icon{
+    font-size: 30px;
+  }
+  .contact-form-titles {
+    font-size: 16px;
+  }
+  .contact-form-input {
+    padding: 5px 8px;
+    font-size: 13px;
+  }
+} 

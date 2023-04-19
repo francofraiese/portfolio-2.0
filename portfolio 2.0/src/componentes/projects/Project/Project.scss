@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
 }
 
 .project-content {
@@ -191,21 +190,45 @@
   }
 }
 @media (max-width: 1199px) {
+  .project {
+    gap: 40px;
+  }
   .project-tools-icons {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .project-title {
+    font-size: 46px;
+  }
+
+  .project-data {
+    gap: 0px;
   }
 }
 
 @media (max-width: 991px) {
+  .project {
+    gap: 40px;
+  }
+
+  .project-title {
+    font-size: 40px;
+  }
+
+  .project-description {
+    font-size: 19px;
+  }
+
   .project-tools-icons {
     grid-template-columns: repeat(4, 1fr);
   }
+
   .project-content {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
   }
 
   .project-description {
@@ -233,25 +256,94 @@
     flex-direction: column;
     align-items: center;
     justify-content: unset;
-    gap: 50px;
+    gap: 30px;
   }
 }
 
 @media (max-width: 768px) {
-  .project-tools-icons {
-    grid-template-columns: repeat(3, 1fr);
+  .project {
+    gap: 30px;
+  }
+
+  .project-title {
+    font-size: 34px;
+  }
+
+  .project-subtitles {
+    font-size: 22px;
+  }
+
+  .project-description {
+    font-size: 17px;
+  }
+
+  .tools-icon,
+  .link-icon {
+    font-size: 35px;
   }
 
   .project-links-icons {
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    gap: 40px;
+    gap: 35px;
+  }
+
+  .project-tools-icons {
+    row-gap: 35px;
+  }
+}
+
+@media (max-width: 565px) {
+  .project-tools-icons {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+  }
+
+  .project-links-icons {
+    gap: 30px;
+  }
+
+  .tools-icon,
+  .link-icon {
+    font-size: 30px;
+  }
+
+  .project-title {
+    font-size: 28px;
+  }
+
+  .project-subtitles {
+    font-size: 20px;
+  }
+
+  .project-description {
+    font-size: 16px;
   }
 }
 
 @media (max-width: 428px) {
   .project-tools-icons {
-    grid-template-columns: repeat(2, 1fr);
+    row-gap: 25px;
+  }
+
+  .project-links-icons {
+    gap: 25px;
+  }
+
+  .tools-icon,
+  .link-icon {
+    font-size: 25px;
+  }
+  .project-title {
+    font-size: 24px;
+  }
+
+  .project-subtitles {
+    font-size: 18px;
+  }
+
+  .project-description {
+    font-size: 14px;
   }
 }
