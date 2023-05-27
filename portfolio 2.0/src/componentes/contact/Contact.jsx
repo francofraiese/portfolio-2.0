@@ -19,7 +19,7 @@ const Contact = () => {
 
   const { lang } = useContext(AppContext);
   const { contact } = LanguageData[lang];
-  const { title, text, form } = contact;
+  const { title, text, form, cv } = contact;
 
   return (
     <div id="Contact" className="contact">
@@ -88,6 +88,26 @@ const Contact = () => {
             className="contact-form-send"
           />
         </form>
+      <div className="names">
+        <h3>{cv?.title}: </h3>
+        <div className="navbar-cvs">
+          <a
+            href="./docs/Franco Fraiese EN CV.pdf"
+            target="_blank"
+            className="link-cv"
+          >
+            <h3 className="curriculum">{cv.en}</h3>
+          </a>
+          <h3 style={{ paddingLeft: 6 }}><span className="navbar-cvs-separator">|</span></h3>
+          <a
+            href="./docs/Franco Fraiese CV.pdf"
+            target="_blank"
+            className="link-cv"
+          >
+            <h3 className="curriculum">{cv.es}</h3>
+          </a>
+        </div>
+      </div>
       </div>
     </div>
   );

@@ -19,17 +19,12 @@ import {
   SiJirasoftware,
   SiCss3,
   SiHtml5,
-  SiSwagger
+  SiSwagger,
 } from "react-icons/si";
 
 const LanguageData = {
   en: {
     navbar: {
-      cv: {
-        title: "View resume",
-        es: "Spanish",
-        en: "English",
-      },
       about: "About",
       skills: "Skills",
       projects: "Projects",
@@ -47,6 +42,8 @@ const LanguageData = {
       },
     },
     skills: {
+      title: "These are some of my",
+      titleGreen: "skills",
       front: {
         title: "Front-end",
         icons: [
@@ -59,6 +56,7 @@ const LanguageData = {
             id="bootstrap"
             className="skills-icon"
           />,
+          <SiJavascript key="js" id="js" className="skills-icon" />,
         ],
       },
       back: {
@@ -68,6 +66,8 @@ const LanguageData = {
           <SiNestjs key="nest" id="nest" className="skills-icon" />,
           <SiExpress key="express" id="express" className="skills-icon" />,
           <SiSwagger key="swagger" id="swagger" className="skills-icon" />,
+          <SiJavascript key="js" id="js" className="skills-icon" />,
+          <SiTypescript key="ts" id="ts" className="skills-icon" />,
         ],
       },
       db: {
@@ -76,7 +76,11 @@ const LanguageData = {
           <SiMongodb key="mongo" id="mongo" className="skills-icon" />,
           <SiPostgresql key="postgres" id="postgres" className="skills-icon" />,
           <SiMysql key="mysql" id="mysql" className="skills-icon" />,
-          <SiSequelize key="sequelize" id="sequelize" className="skills-icon" />,
+          <SiSequelize
+            key="sequelize"
+            id="sequelize"
+            className="skills-icon"
+          />,
           <SiPrisma key="prisma" id="prisma" className="skills-icon" />,
         ],
       },
@@ -84,11 +88,20 @@ const LanguageData = {
         title: "Toolkit",
         icons: [
           <SiGit key="git" id="git" className="skills-icon" />,
-          <SiGithub key="github-skill" id="github-skill" className="skills-icon" />,
+          <SiGithub
+            key="github-skill"
+            id="github-skill"
+            className="skills-icon"
+          />,
           <SiGitlab key="gitlab" id="gitlab" className="skills-icon" />,
-          <SiBitbucket key="bitbucket" id="bitbucket" className="skills-icon" />,
+          <SiBitbucket
+            key="bitbucket"
+            id="bitbucket"
+            className="skills-icon"
+          />,
           <SiTrello key="trello" id="trello" className="skills-icon" />,
-          <SiJirasoftware key="jira" id="jira" className="skills-icon" />],
+          <SiJirasoftware key="jira" id="jira" className="skills-icon" />,
+        ],
       },
     },
     projects: [
@@ -182,6 +195,11 @@ const LanguageData = {
       },
     ],
     contact: {
+      cv: {
+        title: "View resume",
+        es: "Spanish",
+        en: "English",
+      },
       title: {
         white: "Let's get in ",
         green: "touch",
@@ -201,11 +219,6 @@ const LanguageData = {
   },
   es: {
     navbar: {
-      cv: {
-        title: "Ver curriculum",
-        es: "Español",
-        en: "Inglés",
-      },
       about: "Sobre mí",
       skills: "Habilidades",
       projects: "Proyectos",
@@ -223,21 +236,66 @@ const LanguageData = {
       },
     },
     skills: {
+      title: "Estas son algunas de mis",
+      titleGreen: "habilidades",
       front: {
         title: "Front-end",
-        icons: [],
+        icons: [
+          <FaReact key="react" id="react" className="skills-icon" />,
+          <SiRedux key="redux" id="redux" className="skills-icon" />,
+          <SiCss3 key="css3" id="css3" className="skills-icon" />,
+          <SiHtml5 key="html5" id="html5" className="skills-icon" />,
+          <FaBootstrap
+            key="bootstrap"
+            id="bootstrap"
+            className="skills-icon"
+          />,
+          <SiJavascript key="js" id="js" className="skills-icon" />,
+        ],
       },
       back: {
         title: "Back-end",
-        icons: [],
+        icons: [
+          <FaNodeJs key="node" id="node" className="skills-icon" />,
+          <SiNestjs key="nest" id="nest" className="skills-icon" />,
+          <SiExpress key="express" id="express" className="skills-icon" />,
+          <SiSwagger key="swagger" id="swagger" className="skills-icon" />,
+          <SiJavascript key="js" id="js" className="skills-icon" />,
+          <SiTypescript key="ts" id="ts" className="skills-icon" />,
+        ],
       },
       db: {
-        title: "Base de datos",
-        icons: [],
+        title: "Bases de datos",
+        icons: [
+          <SiMongodb key="mongo" id="mongo" className="skills-icon" />,
+          <SiPostgresql key="postgres" id="postgres" className="skills-icon" />,
+          <SiMysql key="mysql" id="mysql" className="skills-icon" />,
+          <SiSequelize
+            key="sequelize"
+            id="sequelize"
+            className="skills-icon"
+          />,
+          <SiPrisma key="prisma" id="prisma" className="skills-icon" />,
+        ],
       },
       toolkit: {
         title: "Herramientas",
-        icons: [],
+        icons: [
+          <SiGit key="git" id="git" className="skills-icon" />,
+          <SiGithub
+            key="github-skill"
+            id="github-skill"
+            className="skills-icon"
+          />,
+          <SiGitlab key="gitlab" id="gitlab" className="skills-icon" />,
+          <SiBitbucket
+            key="bitbucket"
+            id="bitbucket"
+            className="skills-icon"
+          />,
+          <SiTrello key="trello" id="trello" className="skills-icon" />,
+          <SiJirasoftware key="jira" id="jira" className="skills-icon" />,
+        ],
       },
     },
     projects: [
@@ -331,6 +389,11 @@ const LanguageData = {
       },
     ],
     contact: {
+      cv: {
+        title: "Ver curriculum",
+        es: "Español",
+        en: "Inglés",
+      },
       title: {
         white: "Pongámonos en ",
         green: "contacto",

@@ -2,49 +2,15 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin: 15px 0px;
 }
 
-.navbar .names {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar-cvs{
-  display: flex;
-}
-
-.navbar .names .navbar-cvs > a {
-  text-decoration: none;
-  padding-left: 3px;
-}
-
-.navbar .names > h3 {
-  font-weight: 300;
-  margin: 3px 0px;
-  font-size: 20px;
-}
-
-.navbar .names .navbar-cvs > h3 {
-  font-weight: 300;
-  margin: 3px 0px;
-  font-size: 20px;
-}
-
-.navbar .names .navbar-cvs > a .curriculum {
-  color: #15c196;
-  padding-left: 3px;
-  margin: 3px 0px;
-  font-weight: 300;
-  font-size: 20px;
-}
-
 .navbar .buttons {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: center;
   gap: 50px;
 }
 
@@ -64,6 +30,7 @@
   padding-right: 3px;
 }
 .navbar-language-flags {
+  position: absolute;
   display: flex;
   gap: 10px;
 }
@@ -72,63 +39,80 @@
   cursor: pointer;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 991px) {
+  .navbar{
+    justify-content: space-between;
+  }
+  .navbar-language-flags {
+    position: unset;
+  }
   .navbar .buttons {
-    gap: 18px;
-  }
-  .navbar-language-flag {
-    width: 25px;
-  }
-  .navbar .names > h3 {
-    font-size: 17px;
-  }
-  .navbar .names .navbar-cvs > h3 {
-    font-size: 17px;
+    width: fit-content;
+    gap: 30px;
   }
   .navbar .buttons .item > h3 {
-    font-size: 17px;
+    font-size: 19px;
   }
-  .navbar .names .navbar-cvs > a .curriculum {
-    font-size: 17px;
+  .navbar-language-flag {
+    width: 32px;
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width:768px){
+  .navbar .buttons {
+    gap: 15px;
+  }
+  .navbar-language-flag {
+    width: 26px;
+  }
+  .navbar .buttons .item > h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar{
+    width: 95%;
+  }
+  .buttons .item {
+    display: flex;
+    flex-direction: column;
+  }
   .navbar .buttons {
     gap: 15px;
   }
   .navbar-language-flag {
     width: 22px;
   }
-  .navbar .names > h3 {
-    font-size: 16px;
-  }
-  .navbar .names .navbar-cvs > h3 {
-    font-size: 16px;
-  }
   .navbar .buttons .item > h3 {
     font-size: 16px;
   }
-  .navbar .names .navbar-cvs > a .curriculum {
-    font-size: 16px;
-  }
 }
 
-@media (max-width: 768px){
-  .names, .buttons .item {
+@media (max-width: 540px){
+  .buttons .item {
     flex-direction: column;
   }
+  .navbar .buttons {
+    gap: 12px;
+  }
+  .navbar-language-flag {
+    width: 22px;
+  }
+  .navbar .buttons .item > h3 {
+    font-size: 15px;
+  }
 }
-
-
+@media (max-width: 540px){
+  .navbar-language-flags{
+    flex-direction: column;
+  }
+  .navbar{
+    width: 100%;
+  }
+}
+/* 
 @media (max-width: 540px) {
-  .navbar-cvs-separator{
-    display: none;
-  }
-  .navbar-cvs{
-    flex-direction: column;
-    align-items: center;
-  }
   .navbar .buttons {
     gap: 10px;
   }
@@ -137,22 +121,7 @@
     height: fit-content;
     padding: 10px 0px;
   }
-  .navbar .names > h3 {
-    font-size: 14px;
-  }
-  .navbar .names .navbar-cvs > h3 {
-    font-size: 14px;
-  }
   .navbar .buttons .item > h3 {
     font-size: 14px;
   }
-  .navbar .names .navbar-cvs > a .curriculum {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 400px){
-  .navbar .names{
-    text-align: center;
-  }
-}
+} */

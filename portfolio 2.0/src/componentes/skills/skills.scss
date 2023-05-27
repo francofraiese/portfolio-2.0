@@ -9,9 +9,9 @@
 
 .skills-title {
   width: 90%;
-  text-align: end;
+  text-align: start;
   font-weight: 400;
-  font-size: 52px;
+  font-size: 38px;
   margin-top: 0px;
   margin-bottom: 60px;
 }
@@ -58,7 +58,7 @@
 .tab-title {
   margin: 0;
   width: fit-content;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 400;
   border-bottom: 2px double #15c196;
 }
@@ -157,4 +157,185 @@
   #swagger {
     color: #6a9500;
   }
+
+  #js {
+    color: #ead41c;
+  }
+
+  #ts {
+    color: #2e72bc;
+  }
 }
+
+@media (max-width: 1199px) {
+  .skills-title {
+    font-size: 36px;
+  }
+
+  .skills-tabs {
+    gap: 45px;
+  }
+
+  .tab {
+    padding: 18px 23px;
+  }
+
+  .tab-reverse {
+    padding: 18px 26px;
+  }
+
+  .tab-title {
+    font-size: 28px;
+  }
+
+  .tab-icons {
+    font-size: 44px;
+    gap: 35px;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .skills-title {
+    font-size: 34px;
+  }
+
+  .skills-tabs {
+    gap: 40px;
+  }
+
+  .tab {
+    padding: 16px 23px;
+  }
+
+  .tab-reverse {
+    padding: 16px 23px;
+  }
+
+  .tab-title {
+    font-size: 25px;
+  }
+
+  .tab-icons {
+    font-size: 40px;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-title {
+    font-size: 30px;
+  }
+
+  .skills-tabs {
+    gap: 30px;
+  }
+
+  .tab {
+    padding: 14px 20px;
+  }
+
+  .tab-reverse {
+    padding: 14px 20px;
+  }
+
+  .tab-title {
+    font-size: 22px;
+  }
+
+  .tab-icons {
+    font-size: 35px;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-title {
+    font-size: 30px;
+  }
+
+  .skills-tabs {
+    gap: 30px;
+  }
+
+  .tab {
+    gap:20px;
+    width: 85%;
+    padding: 14px 20px;
+  }
+
+  .tab-reverse {
+    gap:20px;
+    width: 85%;
+    padding: 14px 20px;
+  }
+
+  .tab-title {
+    font-size: 22px;
+  }
+
+  .tab-icons {
+    font-size: 35px;
+    gap: 25px;
+  }
+}
+
+
+
+@media (max-width: 680px) {
+  .skills-title{
+    text-align: center;
+    font-size: 24px;
+  }
+  .tab, .tab-reverse{
+    flex-direction: column;
+    width: fit-content;
+    background-color: transparent;
+    padding: 0px;
+    border-radius: 0px;
+  }
+  .tab-icons{
+    padding: 20px 35px;
+    border-radius: 10px;
+    background-color: #00000073;
+  }
+
+  .skills-tabs {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 540px) {
+  .skills-title {
+    width: 70%;
+    font-size: 22px;
+  }
+
+  .tab-title {
+    font-size: 20px;
+  }
+
+  .tab-icons {
+    font-size: 30px;
+    gap: 20px;
+    padding: 18px 30px;
+  }
+}
+
+@media (max-width: 428px) {
+  .skills-title {
+    width: 80%;
+    font-size: 20px;
+  }
+
+  .tab-title {
+    font-size: 18px;
+  }
+
+  .tab-icons {
+    font-size: 26px;
+    gap: 15px;
+    padding: 13px 25px;
+  }
+}
+
